@@ -1,4 +1,5 @@
 import { MergedState } from "@acme/utils";
+import { store } from "@acme/utils";
 
 declare module "@acme/utils" {
   interface ExtraState {
@@ -22,5 +23,7 @@ export const plugin = {
     store.voila = "aha";
   },
 };
+
+store.use(plugin);
 
 export * from "./Button";

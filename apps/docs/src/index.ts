@@ -1,5 +1,4 @@
 import { store } from "@acme/utils";
-import { plugin } from "@acme/core";
-store.use(plugin);
+import "@acme/core";
 
 console.log(store.getState().voila);
